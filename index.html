@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="Jasuke Maz D - Camilan Sehat, Hangat, dan Praktis di Cimahi. Topping melimpah dan harga terjangkau. Pesan via WhatsApp!">
+  <title>Jasuke Maz D | Camilan Sehat & Praktis</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav {
+      background: #ffa500;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-around;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px;
+      cursor: pointer;
+    }
+    .section {
+      padding: 20px;
+      display: none;
+      animation: fade 0.3s ease-in-out;
+    }
+    .section.active {
+      display: block;
+    }
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header {
+      background: url('jasuke.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 60px 15px;
+      text-shadow: 2px 2px 5px #000;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1rem;
+    }
+    .products {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      width: 90%;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 140px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      margin: 10px 0 5px;
+      font-size: 1rem;
+    }
+    .product-card p {
+      font-weight: bold;
+      color: #ff5722;
+      font-size: 0.9rem;
+    }
+    .product-card a button {
+      background: #ffa500;
+      color: white;
+      border: none;
+      padding: 8px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 5px 0;
+      width: 100%;
+      font-size: 0.9rem;
+    }
+    .profile, .contact {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('menu')">Menu</a>
+    <a onclick="showSection('profil')">Profil</a>
+    <a onclick="showSection('kontak')">Kontak</a>
+  </nav>
+
+  <section class="section active" id="home">
+    <header>
+      <h1>JASUKE MAZ D</h1>
+      <p>Camilan Sehat, Hangat & Praktis Berbasis Jagung Manis Lokal</p>
+    </header>
+  </section>
+
+  <section class="section" id="menu">
+    <div class="products">
+      <div class="product-card">
+        <img src="produk.jpg" alt="Jasuke Original">
+        <h3>Jasuke Original</h3>
+        <p>Rp 5.000 (10 OZ)</p>
+        <a href="https://wa.me/6285769033135?text=Halo, saya mau pesan Jasuke Original" target="_blank"><button>WhatsApp</button></a>
+        <a href="https://www.instagram.com/jasuke_mazd4/" target="_blank"><button>Instagram</button></a>
+      </div>
+      <div class="product-card">
+        <img src="produk.jpg" alt="Jasuke Milo">
+        <h3>Jasuke Milo</h3>
+        <p>Rp 5.000 (10 OZ)</p>
+        <a href="https://wa.me/6285769033135?text=Halo, saya mau pesan Jasuke Milo" target="_blank"><button>WhatsApp</button></a>
+        <a href="https://www.instagram.com/jasuke_mazd4/" target="_blank"><button>Instagram</button></a>
+      </div>
+      <div class="product-card">
+        <img src="produk.jpg" alt="Jasuke Coklat">
+        <h3>Jasuke Coklat</h3>
+        <p>Rp 5.000 (10 OZ)</p>
+        <a href="https://wa.me/6285769033135?text=Halo, saya mau pesan Jasuke Coklat" target="_blank"><button>WhatsApp</button></a>
+        <a href="https://www.instagram.com/jasuke_mazd4/" target="_blank"><button>Instagram</button></a>
+      </div>
+      <div class="product-card">
+        <img src="produk.jpg" alt="Jasuke Coklat Sutih">
+        <h3>Jasuke Coklat Sutih</h3>
+        <p>Rp 10.000 (15 OZ)</p>
+        <a href="https://wa.me/6285769033135?text=Halo, saya mau pesan Jasuke Coklat Sutih" target="_blank"><button>WhatsApp</button></a>
+        <a href="https://www.instagram.com/jasuke_mazd4/" target="_blank"><button>Instagram</button></a>
+      </div>
+      <div class="product-card">
+        <img src="produk.jpg" alt="Jasuke Keju Sucok">
+        <h3>Jasuke Keju Sucok</h3>
+        <p>Rp 10.000 (15 OZ)</p>
+        <a href="https://wa.me/6285769033135?text=Halo, saya mau pesan Jasuke Keju Sucok" target="_blank"><button>WhatsApp</button></a>
+        <a href="https://www.instagram.com/jasuke_mazd4/" target="_blank"><button>Instagram</button></a>
+      </div>
+      <div class="product-card">
+        <img src="produk.jpg" alt="Jasuke Spesial">
+        <h3>Jasuke Spesial</h3>
+        <p>Rp 10.000 (15 OZ)</p>
+        <a href="https://wa.me/6285769033135?text=Halo, saya mau pesan Jasuke Spesial" target="_blank"><button>WhatsApp</button></a>
+        <a href="https://www.instagram.com/jasuke_mazd4/" target="_blank"><button>Instagram</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="profil">
+    <div class="profile">
+      <h2>Profil UMKM</h2>
+      <p><strong>Nama UMKM:</strong> Jasuke Maz D</p>
+      <p><strong>Owner:</strong> Dinar Jhonata</p>
+      <p><strong>Alamat:</strong> Cimahi, Lapangan Tembak GOR Siliwangi</p>
+      <p><strong>Misi:</strong> Memberikan camilan sehat, hangat, dan praktis berbasis jagung manis lokal kepada masyarakat dengan harga terjangkau.</p>
+    </div>
+  </section>
+
+  <section class="section" id="kontak">
+    <div class="contact">
+      <h2>Kontak</h2>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/6285769033135" target="_blank">0857-6903-3135</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/jasuke_mazd4/" target="_blank">@jasuke_mazd4</a></p>
+      <p><strong>Lokasi Booth:</strong> Cimahi Tengah</p>
+    </div>
+  </section>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
